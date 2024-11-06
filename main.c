@@ -1,42 +1,40 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <stdbool.h>
+
 #include "check_in.c"
 #include "check_out.c"
-#include "book_table.c"
+//#include "booking.c"
 
-
-void create_new_guest() {
-    FILE *fptr;
-
-    // Create a file
-    fptr = fopen("idkcustomers\\", "w");
-
-    // Close the file
-    fclose(fptr);
-}
-
-
-int main(void) {
+int main() {
     int choice;
-    printf("Please enter what you would like to do: \n\n");
-    printf("\t1. Check In\n");
-    printf("\t2. Check Out\n");
-    printf("\t3. Book Table\n\n");
-    printf("> ");
-    scanf("%d", &choice);
-    switch(choice) {
-        case 1:
-            check_in();
-        break;
-        case 2:
-            check_out();
-        break;
-        case 3:
-            book_table();
-        break;
-        default:
-            printf("Invalid input.");
-        break;
+
+    mkdir("storage");
+    listdirs();
+
+    while (1) {
+        printf("Choose: \n");
+        printf("1. check in\n");
+        printf("2. book\n");
+        printf("3. check out\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                check_in();
+                break;
+            case 2:
+                //book_dinner_table();
+                break;
+            case 3:
+                //check_out();
+                break;
+            default:
+                printf("Invalid choice\n");
+        }
     }
-
-
+    return 0;
 }
