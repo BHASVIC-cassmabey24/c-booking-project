@@ -11,7 +11,6 @@
 int main() {
     int choice;
 
-    mkdir("storage");
     listdirs();
 
     while (1) {
@@ -21,7 +20,7 @@ int main() {
         printf("3. check out\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-
+//
         switch (choice) {
             case 1:
                 check_in();

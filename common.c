@@ -55,7 +55,7 @@ int get_firstname(const char *booking_id) {
         printf("Error opening file\n");
     }
 
-    
+
 
     printf("Content of the file are: \n");
 }
