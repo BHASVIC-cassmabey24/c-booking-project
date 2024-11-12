@@ -4,9 +4,9 @@
 #include <sys/stat.h>
 #include <stdbool.h>
 
-#include "check_in.c"
+//#include "check_in.c"
 #include "check_out.c"
-//#include "booking.c"
+//#include "book_table.c"
 
 int main() {
     int choice;
@@ -24,7 +24,7 @@ int main() {
                 check_in();
                 break;
             case 2:
-                //book_dinner_table();
+                book_table();
                 break;
             case 3:
                 //check_out();

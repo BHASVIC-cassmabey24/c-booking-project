@@ -6,7 +6,7 @@
 #include <direct.h>
 #include <ctype.h>
 
-#include "common.c"
+#include "common.h"
 
 
 

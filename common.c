@@ -8,7 +8,8 @@
 #include <string.h>
 #include <dirent.h>
 #include <sys/stat.h>
-#include <unistd.h>  
+#include <unistd.h>
+#include "common.h"
 
 void generatebooking_id(char surname[], char booking_id[]) {
     srand(time(NULL));

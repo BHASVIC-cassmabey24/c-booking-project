@@ -1,0 +1,24 @@
+# ninja log v6
+25	342	7531522558472116	CMakeFiles/idkworkorwtv.dir/common.c.obj	f2c0ef434f3c87c0
+12	270	7531524478486946	CMakeFiles/idkworkorwtv.dir/main.c.obj	8da905dd0360e703
+273	574	7531524481099407	idkworkorwtv.exe	4e3afcd002d711b0
+61	270	7531522558836483	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	1535a08caa5b0f57
+11	628	7531546311707221	build.ninja	24cfad78973db187
+43	327	7531522558652519	CMakeFiles/idkworkorwtv.dir/check_in.c.obj	d38ab4406375a311
+5	436	7531546311707221	build.ninja	24cfad78973db187
+20	342	7531546708976549	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	1535a08caa5b0f57
+344	1078	7531546712212641	idkworkorwtv.exe	4e3afcd002d711b0
+30	316	7531547547753528	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	1535a08caa5b0f57
+318	567	7531547550629729	idkworkorwtv.exe	4e3afcd002d711b0
+39	306	7531547654879279	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	1535a08caa5b0f57
+307	563	7531547657544652	idkworkorwtv.exe	4e3afcd002d711b0
+34	375	7531548924456127	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	1535a08caa5b0f57
+377	672	7531548927878959	idkworkorwtv.exe	4e3afcd002d711b0
+11	204	7531549338117683	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	1535a08caa5b0f57
+205	533	7531549340056486	idkworkorwtv.exe	4e3afcd002d711b0
+31	394	7531549710090420	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	1535a08caa5b0f57
+396	662	7531549713729042	idkworkorwtv.exe	4e3afcd002d711b0
+19	251	7531549892955563	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	1535a08caa5b0f57
+253	590	7531549895301210	idkworkorwtv.exe	4e3afcd002d711b0
+12	227	7531550881196756	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	1535a08caa5b0f57
+230	541	7531550883378520	idkworkorwtv.exe	4e3afcd002d711b0
