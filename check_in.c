@@ -109,7 +109,6 @@ void check_in() {
         stay_length <= 0 ||
 
         // ROom number valdidation
-        has_numbers(roomnumber) ||
         roomnumber <= 0 ||
         roomnumber >= 7 ||
 

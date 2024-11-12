@@ -25,7 +25,7 @@ int has_numbers(char string[255]) {
     return 0;
 }
 
-bool validate_board(char board[]) {
+int validate_board(char board[]) {
     if (strcmp(board, "FB") == 0) {
         return 1;
     } else if (strcmp(board, "HB") == 0) {

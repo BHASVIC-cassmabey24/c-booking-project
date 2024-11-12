@@ -11,8 +11,6 @@
 int main() {
     int choice;
 
-    listdirs();
-
     while (1) {
         printf("Choose: \n");
         printf("1. check in\n");
