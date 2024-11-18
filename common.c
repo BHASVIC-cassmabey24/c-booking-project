@@ -10,6 +10,10 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include "common.h"
+#include <unistd.h>
+#include <ctype.h>
+#include <stdbool.h>
+#include <time.h>
 
 void generatebooking_id(char surname[], char booking_id[]) {
     srand(time(NULL));
@@ -104,4 +108,102 @@ int check_booking_id(const char *booking_id) {
     closedir(dir);
 
     return 0;
+}
+// start of booking subprograms:
+bool Incorrect_ID() {
+    int check;
+    printf("\nYou entered the wrong booking ID");
+    printf("\nPlease enter 1 if you would like to  try again or 0 to go back to menu:\n ");
+    fflush(stdin);
+    scanf("%d", &check);
+    if (check != 1) {
+        return false;
+    }
+}
+bool Incorrect_Booking() {
+    int check;
+    printf("\n You have the wrong type (B&B)");
+    printf("\n We will send you back to the menu");
+    printf("\n You are not eligible to book any tables for dinner ");
+    printf("\n Please update your board type or create a new booking:\n ");
+    sleep(6);
+        return false;
+}
+int random_number() {
+
+    srand(time(NULL));
+    int r = (rand() %8) + 1;
+    return r;
+}
+
+int Fill_Table(int R) {// this program will generate fake bookings which represent a day at the restaurant.
+    int bookings [4][256] ={{7,9},{0,0},{0,0},{0,0}};
+    printf("%d",R);
+    switch(R) {// A random number is generated into this so people will get different experiences on each day
+        case 1:
+            bookings[1][0] = 1;
+            bookings[3][1] = 1;
+        break;
+
+        case 2:
+            bookings[1][1] = 1;
+            bookings[4][0] = 1;
+            bookings[2][1] = 1;
+        break;
+
+        case 3:
+            bookings[1][1] = 1;
+            bookings[2][1] = 1;
+            bookings[3][1] = 1;
+            bookings[4][0] = 1;
+            bookings[4][1] = 1;
+        break;
+
+        case 4:
+            bookings[4][0] = 1;
+            bookings[4][1] = 1;
+            bookings[1][0] = 1;
+            bookings[1][1] = 1;
+            bookings[2][1] = 1;
+            bookings[2][0] = 1;
+            bookings[3][1] = 1;
+            bookings[3][0] = 1;
+        break;
+
+        case 5:
+            bookings[3][0] = 1;
+            bookings[4][1] = 1;
+            bookings[4][0] = 1;
+            bookings[3][1] = 1;
+        break;
+
+        case 6:
+            bookings[2][1] = 1;
+            bookings[3][1] = 1;
+            bookings[4][1] = 1;
+        break;
+
+        case 7:
+            bookings[1][0] = 1;
+            bookings[4][1] = 1;
+            bookings[3][0] = 1;
+            bookings[2][1] = 1;
+        break;
+
+        case 8:
+
+        bookings[4][1] = 1;
+        bookings[1][0] = 1;
+        bookings[1][1] = 1;
+        bookings[2][1] = 1;
+        bookings[2][0] = 1;
+        bookings[3][1] = 1;
+        bookings[3][0] = 1;
+        break;
+
+        default:
+            printf("Error: Please try again");
+        break;
+    }
+    return bookings;
 }

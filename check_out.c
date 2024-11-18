@@ -11,18 +11,18 @@ void check_out() {
     char booking_id[255 + 10];
 
     FILE *file;
-    FILE =filepointer
-    file = fopen(file_path, "r");
-    fscanf(file, "%s", &first_name);
-    fscanf(file, "%s", &surname);
-    fscanf(filepointer, "%d %d %d", &day, &month, &year);
-    fscanf(filepointer, "%d", &total_guests);
-    fscanf(filepointer, "%d", &total_adults);
-    fscanf(filepointer, "%d", &total_children);
-    fscanf(file, "%s", &board);
-    fscanf(filepointer, "%d", &stay_length);
-    fscanf(file, "%s", &booking_id);
-    fscanf(filepointer, "%d", &roomnumber);
-    fscanf(filepointer, "%d", &paper);
+    //FILE =filepointer
+   // file = fopen(file_path, "r");
+    //fscanf(file, "%s", &first_name);
+    //fscanf(file, "%s", &surname);
+    //fscanf(filepointer, "%d %d %d", &day, &month, &year);
+    //fscanf(filepointer, "%d", &total_guests);
+    //fscanf(filepointer, "%d", &total_adults);
+    //fscanf(filepointer, "%d", &total_children);
+    //fscanf(file, "%s", &board);
+    //fscanf(filepointer, "%d", &stay_length);
+    //fscanf(file, "%s", &booking_id);
+    //fscanf(filepointer, "%d", &roomnumber);
+    //fscanf(filepointer, "%d", &paper);
 
 }

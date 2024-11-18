@@ -1,7 +1,7 @@
 //
 // Created by Lordn on 12/11/2024.
 //
-
+#include<stdbool.h>
 #ifndef COMMON_H
 #define COMMON_H
 // by including common.c in every file we get a redefinition error
@@ -19,4 +19,12 @@ int get_firstname(const char *booking_id);
 
 int check_booking_id(const char *booking_id);
 
+//Table booking:
+bool Incorrect_ID();
+
+bool Incorrect_Booking();
+
+int random_number();
+
+int Fill_Table(int R);
 #endif //COMMON_H

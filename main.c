@@ -5,16 +5,16 @@
 #include <stdbool.h>
 
 //#include "check_in.c"
-#include "check_out.c"
+//#include "check_out.c"
 //#include "book_table.c"
 
 int main() {
     int choice;
 
     while (1) {
-        printf("Choose: \n");
+        printf("\n Choose: \n");
         printf("1. check in\n");
-        printf("2. book\n");
+        printf("2. book table\n");
         printf("3. check out\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
@@ -27,7 +27,7 @@ int main() {
                 book_table();
                 break;
             case 3:
-                //check_out();
+                check_out();
                 break;
             default:
                 printf("Invalid choice\n");
