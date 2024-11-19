@@ -9,4 +9,5 @@ add_executable(idkworkorwtv main.c
         check_in.c
         "check_out.c"
         book_table.c
+        "Globals.h"
 )

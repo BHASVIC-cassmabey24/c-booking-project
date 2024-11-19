@@ -26,5 +26,5 @@ bool Incorrect_Booking();
 
 int random_number();
 
-int Fill_Table(int R);
+void Fill_Table(int R);
 #endif //COMMON_H

@@ -3,8 +3,9 @@
 #include "common.h"
 #include <stdbool.h>
 #include <stdlib.h>
+#include "Globals.h"
 bool Start =true;
-int bookings[4][256];
+
 void book_table() {
     int random =random_number();
     while (Start) {

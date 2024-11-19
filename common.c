@@ -14,6 +14,9 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <time.h>
+#include "Globals.h"
+
+int bookings [4][256];
 
 void generatebooking_id(char surname[], char booking_id[]) {
     srand(time(NULL));
@@ -136,20 +139,27 @@ int random_number() {
     return r;
 }
 
-int Fill_Table(int R) {// this program will generate fake bookings which represent a day at the restaurant.
-    int bookings [4][256] ={{7,9},{0,0},{0,0},{0,0}};
-    printf("%d",R);
+void Fill_Table(int R) {// this program will generate fake bookings which represent a day at the restaurant.
+
+    printf("\n %d\n",R);
+    bookings[0][0] = 7;
+    bookings[0][1] = 9;
+    for (int i = 1; i < 4; i++) {
+        bookings[i][0] = 0;
+        bookings[i][1] = 0;
+    }
+
     switch(R) {// A random number is generated into this so people will get different experiences on each day
         case 1:
             bookings[1][0] = 1;
             bookings[3][1] = 1;
-        break;
+            break;
 
         case 2:
             bookings[1][1] = 1;
             bookings[4][0] = 1;
             bookings[2][1] = 1;
-        break;
+            break;
 
         case 3:
             bookings[1][1] = 1;
@@ -157,7 +167,7 @@ int Fill_Table(int R) {// this program will generate fake bookings which represe
             bookings[3][1] = 1;
             bookings[4][0] = 1;
             bookings[4][1] = 1;
-        break;
+            break;
 
         case 4:
             bookings[4][0] = 1;
@@ -168,27 +178,27 @@ int Fill_Table(int R) {// this program will generate fake bookings which represe
             bookings[2][0] = 1;
             bookings[3][1] = 1;
             bookings[3][0] = 1;
-        break;
+            break;
 
         case 5:
             bookings[3][0] = 1;
             bookings[4][1] = 1;
             bookings[4][0] = 1;
             bookings[3][1] = 1;
-        break;
+            break;
 
         case 6:
             bookings[2][1] = 1;
             bookings[3][1] = 1;
             bookings[4][1] = 1;
-        break;
+            break;
 
         case 7:
             bookings[1][0] = 1;
             bookings[4][1] = 1;
             bookings[3][0] = 1;
             bookings[2][1] = 1;
-        break;
+            break;
 
         case 8:
 
@@ -203,7 +213,7 @@ int Fill_Table(int R) {// this program will generate fake bookings which represe
 
         default:
             printf("Error: Please try again");
-        break;
+            break;
     }
-    return bookings;
+
 }

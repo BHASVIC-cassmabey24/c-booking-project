@@ -10,6 +10,7 @@
 
 int main() {
     int choice;
+    setbuf(stdout, NULL);
 
     while (1) {
         printf("\n Choose: \n");
