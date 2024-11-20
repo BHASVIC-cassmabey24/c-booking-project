@@ -22,8 +22,7 @@ int main() {
 //
         switch (choice) {
             case 1:
-                get_info("mabey_2121", "firstname");
-                //check_in();
+                check_in();
                 break;
             case 2:
                 //book_table();

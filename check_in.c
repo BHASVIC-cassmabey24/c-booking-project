@@ -70,7 +70,7 @@ char* get_info(char* booking_id, char* linenumber) {
         line_number = 9;
     } else if (strcmp(linenumber, "lengthofstay") == 0) {
         line_number = 10;
-    } else if (strcmp(linenumber, "totalcost") == 0) {
+    } else if (strcmp(linenumber, "roomcost") == 0) {
         line_number = 11;
     } else {
         printf("Invalid linenumber: %s\n", linenumber);
@@ -197,7 +197,7 @@ void check_in() {
     fprintf(file, "%s \n", daily_newspaper);
     fprintf(file, "%d \n", room_choice);
     fprintf(file, "%d \n", length_of_stay);
-    fprintf(file, "%d \n", total_cost);
+    fprintf(file, "%d \n", room_cost);
     fclose(file);
 
     printf("Booking id: %s\n", booking_id);
