@@ -3,8 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-char* generate_booking_id(char name[255]) {
-    char booking_id[255];
+char* generate_booking_id(char name[255], char booking_id[255]) {
     srand(time(NULL));
     int random_num = rand() % 10000;
     sprintf(booking_id, "%s_%d", name, random_num);
@@ -36,39 +35,46 @@ int check_booking_id(char* booking_id) {
 
     FILE *file = fopen(txtfile, "r");
     if (file == NULL) {
-        return 0;
+        return NULL;
     }
     fclose(file);
     return 1;
 }
 
-char* get_booking_field(char* booking_id, char* linenumber) {
-    int line_number = -1;
+char* get_info(char* booking_id, char* linenumber) {
+
+    if (!check_booking_id(booking_id)) {
+        printf("Booking ID not found");
+        return;
+    }
+
+    int line_number = 0;
+    char line[256];
     if (strcmp(linenumber, "firstname") == 0) {
-        line_number = 2;
+        line_number = 1;
     } else if (strcmp(linenumber, "surname") == 0) {
-        line_number = 3;
+        line_number = 2;
     } else if (strcmp(linenumber, "dob") == 0) {
-        line_number = 4;
+        line_number = 3;
     } else if (strcmp(linenumber, "totalguests") == 0) {
-        line_number = 5;
+        line_number = 4;
     } else if (strcmp(linenumber, "totaladults") == 0) {
-        line_number = 6;
+        line_number = 5;
     } else if (strcmp(linenumber, "totalkids") == 0) {
-        line_number = 7;
+        line_number = 6;
     } else if (strcmp(linenumber, "boardtype") == 0) {
-        line_number = 8;
+        line_number = 7;
     } else if (strcmp(linenumber, "newspaper") == 0) {
-        line_number = 9;
+        line_number = 8;
     } else if (strcmp(linenumber, "roomnumber") == 0) {
-        line_number = 10;
+        line_number = 9;
     } else if (strcmp(linenumber, "lengthofstay") == 0) {
-        line_number = 11;
+        line_number = 10;
     } else if (strcmp(linenumber, "totalcost") == 0) {
-        line_number = 12;
+        line_number = 11;
     } else {
         printf("Invalid linenumber: %s\n", linenumber);
-        return;
+        return "";
     }
     char txtfile[255];
     sprintf(txtfile, "./storage/%s.txt", booking_id);
@@ -76,35 +82,23 @@ char* get_booking_field(char* booking_id, char* linenumber) {
     FILE *file = fopen(txtfile, "r");
     if (file == NULL) {
         printf("Booking ID not found: %s\n", booking_id);
-        return;
+        return "";
     }
-
-    char* line = malloc(255 * sizeof(char));
-    if (line == NULL) {
-        printf("Memory allocation failed.\n");
-        fclose(file);
-        return;
-    }
-
-    int current_line = 1;
-    while (fgets(line, 255, file)) {
-        if (current_line == line_number) {
-            line[strcspn(line, "\n")] = '\0';
-            fclose(file);
+    int counter = 0;
+    while (fgets(line, sizeof(line), file)) {
+        if (counter == line_number) {
             return line;
         }
-        current_line++;
+        counter++;
     }
 
-    fclose(file);
-    printf("linenumber not found for booking ID: %s\n", booking_id);
-    return;
+
 }
 
 
 void check_in() {
     char first_name[255], surname[255], dob[255], board_type[255], daily_newspaper[255], txtfile[255];
-    int num_guests, num_adults, num_children, length_of_stay, room_choice;
+    int num_guests = 0, num_adults = 0, num_children = 0, length_of_stay = 0, room_choice = 0;
     int board_cost = 0, room_rate = 0, total_cost = 0, room_cost = 0, total_board_cost = 0;
 
     printf("Firstname: ");
@@ -130,7 +124,7 @@ void check_in() {
         return;
     }
 
-    printf("Enter board type (FB, HB, BB): ");
+    printf("Enter board (FB, HB, BB): ");
     scanf("%s", board_type);
     if (strcmp(board_type, "FB") == 0) {
         board_cost = 20;
@@ -176,13 +170,16 @@ void check_in() {
             return;
     }
 
-    char* booking_id = generate_booking_id(surname);
+    char booking_id[255];
+    generate_booking_id(surname, booking_id);
 
     room_cost = room_rate * length_of_stay;
     total_board_cost = board_cost * num_guests * length_of_stay;
     total_cost = room_cost + total_board_cost;
 
     sprintf(txtfile, "./storage/%s.txt", booking_id);
+
+    printf("%s\n", txtfile);
 
     FILE *file = fopen(txtfile, "w");
     if (file == NULL) {
@@ -198,11 +195,10 @@ void check_in() {
     fprintf(file, "%d \n", num_children);
     fprintf(file, "%s \n", board_type);
     fprintf(file, "%s \n", daily_newspaper);
-    fprintf(file, "%d %d \n", room_choice);
+    fprintf(file, "%d \n", room_choice);
     fprintf(file, "%d \n", length_of_stay);
     fprintf(file, "%d \n", total_cost);
     fclose(file);
-
 
     printf("Booking id: %s\n", booking_id);
 

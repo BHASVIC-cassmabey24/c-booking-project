@@ -17,8 +17,6 @@ void create_directory(char *directory);
 
 int get_firstname(const char *booking_id);
 
-int check_booking_id(const char *booking_id);
-
 //Table booking:
 bool Incorrect_ID();
 
@@ -27,4 +25,9 @@ bool Incorrect_Booking();
 int random_number();
 
 void Fill_Table(int R);
+
+void check_in();
+int check_booking_id(char* booking_id);
+char* get_info(char* booking_id, char* linenumber);
+
 #endif //COMMON_H
