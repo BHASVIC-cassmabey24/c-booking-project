@@ -28,12 +28,10 @@
       <change beforePath="$PROJECT_DIR$/check_out.c" beforeDir="false" afterPath="$PROJECT_DIR$/check_out.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/idkworkorwtv.dir/check_out.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/idkworkorwtv.dir/check_out.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/idkworkorwtv.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/idkworkorwtv.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common.c" beforeDir="false" afterPath="$PROJECT_DIR$/common.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/mabey_28670/info.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <updated>1731932876113</updated>
       <workItem from="1731932879287" duration="12953000" />
       <workItem from="1732019113328" duration="5660000" />
-      <workItem from="1732107323442" duration="2147000" />
+      <workItem from="1732107323442" duration="3444000" />
     </task>
     <servers />
   </component>
