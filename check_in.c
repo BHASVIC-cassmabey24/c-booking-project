@@ -97,8 +97,8 @@ char* get_info(char* booking_id, char* linenumber) {
 
 
 void check_in() {
-    char first_name[255], surname[255], dob[255], board_type[255], daily_newspaper[255], txtfile[255];
-    int num_guests = 0, num_adults = 0, num_children = 0, length_of_stay = 0, room_choice = 0;
+    char first_name[255], surname[255], board_type[255], daily_newspaper[255], txtfile[255];
+    int num_guests = 0, num_adults = 0, num_children = 0, length_of_stay = 0, room_choice = 0, date =0, month = 0, year = 0;
     int board_cost = 0, room_rate = 0, total_cost = 0, room_cost = 0, total_board_cost = 0;
 
     printf("Firstname: ");
@@ -106,7 +106,7 @@ void check_in() {
     printf("Surname: ");
     scanf("%s", surname);
     printf("DOB: ");
-    scanf("%s", dob);
+    scanf("%d %d %d", &date, &month, &year);
 
     printf("Amount of guests (max of 4): ");
     scanf("%d", &num_guests);
@@ -189,7 +189,7 @@ void check_in() {
     fprintf(file, "%s \n", booking_id);
     fprintf(file, "%s \n", first_name);
     fprintf(file, "%s \n", surname);
-    fprintf(file, "%s \n", dob);
+    fprintf(file, "%d \n", year);
     fprintf(file, "%d \n", num_guests);
     fprintf(file, "%d \n", num_adults);
     fprintf(file, "%d \n", num_children);
