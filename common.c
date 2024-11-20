@@ -54,10 +54,11 @@ void create_directory(char *directory) {
 bool Incorrect_ID() {
     int check;
     printf("\nYou entered the wrong booking ID");
-    printf("\nPlease enter 1 if you would like to  try again or 0 to go back to menu:\n ");
+    printf("\nPlease enter 1 if you would like to try again or 0 to go back to menu:\n ");
     fflush(stdin);
     scanf("%d", &check);
-    if (check != 1) {
+    if (check == 0) {
+        printf("\nEnding...");
         return false;
     }
 }
@@ -79,7 +80,7 @@ int random_number() {
 
 void Fill_Table(int R) {// this program will generate fake bookings which represent a day at the restaurant.
 
-    printf("\n %d\n",R);
+
     bookings[0][0] = 7;
     bookings[0][1] = 9;
     for (int i = 1; i < 4; i++) {
@@ -95,7 +96,6 @@ void Fill_Table(int R) {// this program will generate fake bookings which repres
 
         case 2:
             bookings[1][1] = 1;
-            bookings[4][0] = 1;
             bookings[2][1] = 1;
             break;
 
@@ -103,13 +103,9 @@ void Fill_Table(int R) {// this program will generate fake bookings which repres
             bookings[1][1] = 1;
             bookings[2][1] = 1;
             bookings[3][1] = 1;
-            bookings[4][0] = 1;
-            bookings[4][1] = 1;
             break;
 
         case 4:
-            bookings[4][0] = 1;
-            bookings[4][1] = 1;
             bookings[1][0] = 1;
             bookings[1][1] = 1;
             bookings[2][1] = 1;
@@ -120,27 +116,21 @@ void Fill_Table(int R) {// this program will generate fake bookings which repres
 
         case 5:
             bookings[3][0] = 1;
-            bookings[4][1] = 1;
-            bookings[4][0] = 1;
             bookings[3][1] = 1;
             break;
 
         case 6:
             bookings[2][1] = 1;
             bookings[3][1] = 1;
-            bookings[4][1] = 1;
             break;
 
         case 7:
             bookings[1][0] = 1;
-            bookings[4][1] = 1;
             bookings[3][0] = 1;
             bookings[2][1] = 1;
             break;
 
         case 8:
-
-        bookings[4][1] = 1;
         bookings[1][0] = 1;
         bookings[1][1] = 1;
         bookings[2][1] = 1;

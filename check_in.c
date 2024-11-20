@@ -35,7 +35,8 @@ int check_booking_id(char* booking_id) {
 
     FILE *file = fopen(txtfile, "r");
     if (file == NULL) {
-        return NULL;
+        printf("Cant be found\n ");
+        return 0;
     }
     fclose(file);
     return 1;
@@ -102,10 +103,10 @@ void check_in() {
     int board_cost = 0, room_rate = 0, total_cost = 0, room_cost = 0, total_board_cost = 0;
 
     printf("Firstname: ");
-    scanf("%s", first_name);
+    scanf("%s", &first_name);
     printf("Surname: ");
-    scanf("%s", surname);
-    printf("DOB: ");
+    scanf("%s", &surname);
+    printf("DOB: (01 01 2001)\n ");
     scanf("%d %d %d", &date, &month, &year);
 
     printf("Amount of guests (max of 4): ");

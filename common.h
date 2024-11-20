@@ -18,6 +18,8 @@ void create_directory(char *directory);
 int get_firstname(const char *booking_id);
 
 //Table booking:
+void book_table();
+
 bool Incorrect_ID();
 
 bool Incorrect_Booking();
