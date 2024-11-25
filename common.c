@@ -80,7 +80,7 @@ int random_number() {
 
 void Fill_Table(int R) {// this program will generate fake bookings which represent a day at the restaurant.
 
-
+    printf("H");
     bookings[0][0] = 7;
     bookings[0][1] = 9;
     for (int i = 1; i < 4; i++) {
@@ -137,7 +137,7 @@ void Fill_Table(int R) {// this program will generate fake bookings which repres
         bookings[2][0] = 1;
         bookings[3][1] = 1;
         bookings[3][0] = 1;
-        break;
+            break;
 
         default:
             printf("Error: Please try again");

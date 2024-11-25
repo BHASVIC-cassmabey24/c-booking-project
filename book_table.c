@@ -25,7 +25,7 @@ void book_table() {
         scanf("%s",ID);
         // way to access booking ID required: going to carry on coding assuming i have it/dont
         printf("\n \n Checking booking ID...");
-        if (get_info(ID ,"booking_id") == "") {
+        if (get_info(ID ,"bookingid") == "") {
             printf("Booking id is invalid");
         } else {
             Start = false;
@@ -41,10 +41,32 @@ void book_table() {
 
 
 
-        //booking id check
+
         Fill_Table(random);
+        printf("\n \n| Booking Regester |");
+        printf("\n -------------------");
 
+        for (int i=0; i<4; i++) {
+            printf("\n");
+            if (i=1) {
+                printf("Naboo:\n");
+            }
+            if (i=2) {
+                printf("Tatooine:\n");
+            }
+            if (i=3){
+                printf("Endor:\n");
+            }
+            for (int j=0; j<2; j++) {
 
+                if (bookings[i][j] == 0) {
+                    printf("Booked");
+                }
+                else if (bookings[i][j] == 1) {
+                    printf("Available");
 
+                }
+            }
+        }
     }
 }
