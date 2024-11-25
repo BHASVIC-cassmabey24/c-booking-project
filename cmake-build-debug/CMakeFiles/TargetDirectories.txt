@@ -1,0 +1,3 @@
+C:/Users/Lordn/comp sci N/hotel project/idkworkorwtv/cmake-build-debug/CMakeFiles/idkworkorwtv.dir
+C:/Users/Lordn/comp sci N/hotel project/idkworkorwtv/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Lordn/comp sci N/hotel project/idkworkorwtv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
