@@ -85,8 +85,10 @@ CMakeFiles/idkworkorwtv.dir/check_out.c.obj: C:/Users/herbie.to24/gitbub/idkwork
   C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
   C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
   C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/string.h \
   C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
   C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/herbie.to24/gitbub/idkworkorwtv/common.h

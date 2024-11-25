@@ -21,5 +21,7 @@ CMakeFiles/idkworkorwtv.dir/check_out.c.obj: \
  C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
  C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
  C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+ C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/string.h \
+ C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:\Users\herbie.to24\gitbub\idkworkorwtv\common.h \
  C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h

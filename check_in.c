@@ -43,7 +43,6 @@ int check_booking_id(char* booking_id) {
 }
 
 char* get_info(char* booking_id, char* linenumber) {
-
     if (!check_booking_id(booking_id)) {
         printf("Booking ID not found");
         return;
@@ -51,7 +50,9 @@ char* get_info(char* booking_id, char* linenumber) {
 
     int line_number = 0;
     char line[256];
-    if (strcmp(linenumber, "firstname") == 0) {
+    if (strcmp(linenumber, "bookingid") == 0) {
+        line_number = 0;
+    } else if (strcmp(linenumber, "firstname") == 0) {
         line_number = 1;
     } else if (strcmp(linenumber, "surname") == 0) {
         line_number = 2;
