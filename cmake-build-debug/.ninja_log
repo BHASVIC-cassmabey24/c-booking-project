@@ -1,16 +1,4 @@
 # ninja log v6
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-9	435	7538108028314789	CMakeFiles/idkworkorwtv.dir/main.c.obj	e2317595f1269835
-10	133	7538114480865409	CMakeFiles/idkworkorwtv.dir/common.c.obj	6bbb869d7ae47863
-113	378	7538137939821154	idkworkorwtv.exe	8a7464325c77baa1
-363	491	7538108031857821	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	8925968fc1f2befb
-5	394	7538142116372550	build.ninja	24cfad78973db187
-28	465	7538108028496058	CMakeFiles/idkworkorwtv.dir/check_in.c.obj	44bd485e7822d88d
-6	112	7538137938750025	CMakeFiles/idkworkorwtv.dir/check_out.c.obj	9747b8362f458a7d
-=======
->>>>>>> Stashed changes
 40	162	7538139442522312	CMakeFiles/idkworkorwtv.dir/main.c.obj	fefebcb8fc8da4b0
 28	193	7538095699164608	CMakeFiles/idkworkorwtv.dir/common.c.obj	737364c84e71862b
 167	453	7538139443791473	idkworkorwtv.exe	d9149c011e428054
@@ -79,7 +67,3 @@
 116	243	7538451945250141	idkworkorwtv.exe	d9149c011e428054
 9	115	7538458418504691	CMakeFiles/idkworkorwtv.dir/book_table.c.obj	bf52272deb032f4c
 116	258	7538458419569723	idkworkorwtv.exe	d9149c011e428054
-<<<<<<< Updated upstream
-=======
->>>>>>> 5ec9801252c4056683a51ddb0f90dbce2a1d9298
->>>>>>> Stashed changes
