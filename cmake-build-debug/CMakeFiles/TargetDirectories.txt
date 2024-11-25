@@ -1,3 +1,3 @@
-C:/Users/Lordn/CompSci/chapters/idkworkorwtv/idkworkorwtv/cmake-build-debug/CMakeFiles/idkworkorwtv.dir
-C:/Users/Lordn/CompSci/chapters/idkworkorwtv/idkworkorwtv/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Lordn/CompSci/chapters/idkworkorwtv/idkworkorwtv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/herbie.to24/gitbub/idkworkorwtv/cmake-build-debug/CMakeFiles/idkworkorwtv.dir
+C:/Users/herbie.to24/gitbub/idkworkorwtv/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/herbie.to24/gitbub/idkworkorwtv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
