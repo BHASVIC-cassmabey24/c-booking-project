@@ -28,7 +28,7 @@ int main() {
                 book_table();
                 break;
             case 3:
-                //check_out();
+                check_out();
                 break;
             default:
                 printf("Invalid choice\n");

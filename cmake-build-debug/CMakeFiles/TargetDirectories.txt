@@ -1,3 +1,0 @@
-C:/Users/cass.mabey24/Documents/idkworkorwtv/cmake-build-debug/CMakeFiles/idkworkorwtv.dir
-C:/Users/cass.mabey24/Documents/idkworkorwtv/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/cass.mabey24/Documents/idkworkorwtv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
