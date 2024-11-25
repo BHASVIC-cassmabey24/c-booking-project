@@ -13,52 +13,35 @@ void book_table() {
         bool check_Board = false;
         char BoardType[]="boardtype";
         const char ID[256];
-        char *line=get_info(ID,BoardType);
-
-
-
         printf("\n.");
-        //sleep(1.2);
         printf("\n.");
-        //sleep(1.2);
         printf("\n.");
-        //sleep(1.2);
         printf("\n--------------");
         printf("\nBooking table:");
         printf("\n--------------\n");
 
-        printf("\n \n Checking board type...");
-            sleep(2);
+
+        printf("\n\n Please enter your given booking ID:");
+        scanf("%s",ID);
+        // way to access booking ID required: going to carry on coding assuming i have it/dont
+        printf("\n \n Checking booking ID...");
+        if (get_info(ID ,"booking_id") == "") {
+            printf("Booking id is invalid");
+        } else {
+            Start = false;
+            printf("Booking id is valid");
+            printf("\n \n Checking board type...");
+            char *line=get_info(ID,"boardtype");
             if (line[0] != 'B') {
                 check_Board = true;
             }
 
-            if (check_Board == false) {
-                Start=Incorrect_Booking();
-            }
-            else {
-                printf("\n Correct board type...");
-                sleep(2);
-                Start =false;
-            }
+            printf("Booking ID is valid :)");
+        }
+
+
 
         //booking id check
-        printf("\n\n Please enter your given booking ID:");
-        fflush(stdin);
-        scanf("%s",&ID);
-        // way to access booking ID required: going to carry on coding assuming i have it/dont
-        printf("\n \n Checking booking ID...");
-        sleep(2);
-        checkID =check_booking_id(ID);
-        if (checkID != 1) {
-            Start=Incorrect_ID();
-            if (Start==false) {
-
-            }
-            else {
-                printf("\n Correct Booking ID...");
-            }
-        }
         Fill_Table(random);
 
 

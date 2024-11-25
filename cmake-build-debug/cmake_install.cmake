@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Lordn/CompSci/chapters/idkworkorwtv/idkworkorwtv
+# Install script for directory: C:/Users/cass.mabey24/Documents/idkworkorwtv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Lordn/CompSci/chapters/idkworkorwtv/idkworkorwtv/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/cass.mabey24/Documents/idkworkorwtv/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
