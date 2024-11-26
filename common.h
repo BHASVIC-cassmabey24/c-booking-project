@@ -30,6 +30,6 @@ void Fill_Table(int R);
 
 void check_in();
 int check_booking_id(char* booking_id);
-char* get_info(char* booking_id, char* linenumber);
+char* get_info(char* booking_id, int linenumber);
 
 #endif //COMMON_H

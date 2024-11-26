@@ -144,7 +144,7 @@ void book_table() {
             scanf("%s",ID);
             // way to access booking ID required: going to carry on coding assuming i have it/dont
             printf("\n \n Checking booking ID...");
-            if (get_info(ID ,"bookingid") == "") {
+            if (get_info(ID ,0) == "") {
                 printf("Booking id is invalid");
             } else {
                 Start = false;

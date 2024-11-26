@@ -42,48 +42,45 @@ int check_booking_id(char* booking_id) {
     return 1;
 }
 
-char* get_info(char* booking_id, char* linenumber) {
+char* get_info(char* booking_id, int line_number) {
     if (!check_booking_id(booking_id)) {
-        printf("Booking ID not found");
-        return;
+        return("Booking ID not found");
     }
 
-    int line_number = 0;
-    char line[256];
-    if (strcmp(linenumber, "bookingid") == 0) {
-        line_number = 0;
-    } else if (strcmp(linenumber, "firstname") == 0) {
-        line_number = 1;
-    } else if (strcmp(linenumber, "surname") == 0) {
-        line_number = 2;
-    } else if (strcmp(linenumber, "dob") == 0) {
-        line_number = 3;
-    } else if (strcmp(linenumber, "totalguests") == 0) {
-        line_number = 4;
-    } else if (strcmp(linenumber, "totaladults") == 0) {
-        line_number = 5;
-    } else if (strcmp(linenumber, "totalkids") == 0) {
-        line_number = 6;
-    } else if (strcmp(linenumber, "boardtype") == 0) {
-        line_number = 7;
-    } else if (strcmp(linenumber, "newspaper") == 0) {
-        line_number = 8;
-    } else if (strcmp(linenumber, "roomnumber") == 0) {
-        line_number = 9;
-    } else if (strcmp(linenumber, "lengthofstay") == 0) {
-        line_number = 10;
-    } else if (strcmp(linenumber, "roomcost") == 0) {
-        line_number = 11;
-    } else {
-        printf("Invalid linenumber: %s\n", linenumber);
-        return "";
-    }
+    //int line_number = 0;
+    static char line[256];
+    //if (strcmp(linenumber, "bookingid") == 1) {
+    //    line_number = 0;
+    //} else if (strcmp(linenumber, "firstname") == 1) {
+    //    line_number = 1;
+    //} else if (strcmp(linenumber, "surname") == 1) {
+    //    line_number = 2;
+    //} else if (strcmp(linenumber, "dob") == 1) {
+    //    line_number = 3;
+    //} else if (strcmp(linenumber, "totalguests") == 1) {
+    //    line_number = 4;
+    //} else if (strcmp(linenumber, "totaladults") == 1) {
+    //    line_number = 5;
+    //} else if (strcmp(linenumber, "totalkids") == 1) {
+    //    line_number = 6;
+    //} else if (strcmp(linenumber, "boardtype") == 1) {
+    //    line_number = 7;
+    //} else if (strcmp(linenumber, "newspaper") == 1) {
+    //    line_number = 8;
+    //} else if (strcmp(linenumber, "roomnumber") == 1) {
+    //    line_number = 9;
+    //} else if (strcmp(linenumber, "lengthofstay") == 1) {
+    //    line_number = 10;
+    //} else {
+    //    printf("Invalid linenumber: %s\n", linenumber);
+    //    return "";
+    //}
     char txtfile[255];
     sprintf(txtfile, "./storage/%s.txt", booking_id);
 
     FILE *file = fopen(txtfile, "r");
     if (file == NULL) {
-        printf("Booking ID not found: %s\n", booking_id);
+        return("Booking ID not found: %s\n", booking_id);
         return "";
     }
     int counter = 0;
@@ -93,6 +90,7 @@ char* get_info(char* booking_id, char* linenumber) {
         }
         counter++;
     }
+
 
 
 }
@@ -199,7 +197,6 @@ void check_in() {
     fprintf(file, "%s \n", daily_newspaper);
     fprintf(file, "%d \n", room_choice);
     fprintf(file, "%d \n", length_of_stay);
-    fprintf(file, "%d \n", room_cost);
     fclose(file);
 
     printf("Booking id: %s\n", booking_id);
